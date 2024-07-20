@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: red;
+    height: 100vh;
+}
+
+.nav {
+    background-color: blue;
+    grid-row: 1 / 6;
+}
+
+.actions {
+    background-color: lightgrey;
+    grid-column: 2 / 3;
+}
+
+.dashboard {
+    background-color: lightslategray;
+}
