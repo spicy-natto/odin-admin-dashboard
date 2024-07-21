@@ -25,10 +25,21 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.action-buttons {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.action-buttons button {
+    border-radius: 15px;
+}
+
 /* Temporary to visualize sections */
 .actions div {
     background-color: white;
-    border: solid blue;
+    border: 1px solid blue;
 }
 
 .dashboard {
