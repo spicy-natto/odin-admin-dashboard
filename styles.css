@@ -25,12 +25,13 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.dashboard {
-    background-color: lightslategray;
-}
-
 /* Temporary to visualize sections */
 .actions div {
     background-color: white;
     border: solid blue;
 }
+
+.dashboard {
+    background-color: lightslategray;
+}
+
