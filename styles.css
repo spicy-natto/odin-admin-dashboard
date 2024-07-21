@@ -20,8 +20,17 @@ body {
 .actions {
     background-color: lightgrey;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .dashboard {
     background-color: lightslategray;
+}
+
+/* Temporary to visualize sections */
+.actions div {
+    background-color: white;
+    border: solid blue;
 }
