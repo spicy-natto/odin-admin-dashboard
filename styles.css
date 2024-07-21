@@ -105,13 +105,17 @@ body {
 
 .action-buttons {
     margin: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .action-buttons button {
     border-radius: 15px;
+    width: 6rem;
+    padding: .5rem 0rem;
 }
 
 /* Temporary to visualize sections */
