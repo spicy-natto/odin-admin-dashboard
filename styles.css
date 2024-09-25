@@ -78,6 +78,8 @@ textarea:not([rows]) {
 /* Custom CSS */
 :root {
     --sky-blue: #0ea5e9;
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Roboto", var(--system-ui);
 }
 
 html,
@@ -94,6 +96,8 @@ button {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    font-weight: 600;
+    color: white;
 }
 
 
