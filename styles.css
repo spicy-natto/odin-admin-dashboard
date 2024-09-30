@@ -123,12 +123,9 @@ button {
 }
 
 .action-buttons {
-    margin: .5rem 1.5rem .5rem 0rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: end;
-    align-items: center;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .action-buttons button {
@@ -136,6 +133,7 @@ button {
     width: 6rem;
     padding: .4rem 0rem;
     background-color: var(--sky-blue);
+    justify-self: center;
 }
 
 /* Temporary to visualize sections */
