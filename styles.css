@@ -5,7 +5,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 /* Prevent font size inflation */
@@ -83,6 +82,13 @@ textarea:not([rows]) {
     font-family: "Roboto", var(--system-ui);
 }
 
+/* Temporary for troubleshooting */
+*,
+*::before,
+*::after {
+  /* border: 1px solid red; */
+}
+
 html,
 body {
     margin: 0;
@@ -106,7 +112,6 @@ button {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    /* background-color: red; */
     height: 100vh;
 }
 
@@ -116,7 +121,7 @@ button {
 }
 
 .actions {
-    background-color: lightgrey;
+    background: white;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -125,15 +130,16 @@ button {
     gap: 10px;
 }
 
-/* Temporary to visualize sections */
-.actions div {
-  background-color: white;
-  border: 1px solid blue;
+.actions p,
+.actions h1,
+.actions h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .action-buttons {
     display: grid;
-    grid-template-columns: repeat(3, 6rem);
+    grid-template-columns: repeat(3, auto);
     gap: 1.5rem;
     justify-content: end;
     align-items: center;
@@ -146,31 +152,21 @@ button {
     background-color: var(--sky-blue);
 }
 
-.dashboard {
-    background-color: lightslategray;
-}
-
 .avatar {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 
-.avatar img {
+.avatar-img {
   background-color: blueviolet;
-  width: 60px;
+  width: 4rem;
   height: 60px;
   border-radius: 50%;
 }
 
 .welcome-message {
   margin-left: 15px;
-}
-
-.welcome-message p,
-.welcome-message h1 {
-  margin: 0;
-  padding: 0;
 }
 
 .welcome-message p {
@@ -188,9 +184,11 @@ button {
   grid-template-columns: 1.5rem 1fr;
   align-items: center;
 }
+
 .search input {
   margin-left: 1rem;
   background: lightgrey;
+  border: none;
   border-radius: 1rem;
   height: 1.5rem;
 }
@@ -215,7 +213,9 @@ button {
 }
 
 .alerts h2 {
-  margin: 0;
-  padding: 0;
   font-size: 1rem;
+}
+
+.dashboard {
+  background-color: lightslategray;
 }
