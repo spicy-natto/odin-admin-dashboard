@@ -115,11 +115,13 @@ button {
     height: 100vh;
 }
 
+/*** NAV BAR ***/
 .nav {
     background-color: blue;
     grid-row: 1 / 6;
 }
 
+/*** ACTIONS ***/
 .actions {
     background: white;
     grid-column: 2 / 3;
@@ -174,7 +176,7 @@ button {
   font-weight: 800;
 }
 
-.welcome-message h1 {
+.welcome-message .name {
   font-size: 1.2rem;
   font-weight: 900;
 }
@@ -216,6 +218,8 @@ button {
   font-size: 1rem;
 }
 
+
+/*** DASHBOARD ***/
 .dashboard {
   background-color: lightslategray;
 }
