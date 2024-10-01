@@ -86,7 +86,7 @@ textarea:not([rows]) {
 *,
 *::before,
 *::after {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -94,6 +94,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 
 button {
     background: none;
@@ -119,6 +127,27 @@ button {
 .nav {
     background-color: blue;
     grid-row: 1 / 6;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-content: start;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.dashboard-title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-header {
+  font-size: 1.5rem;
+}
+
+.view-dashboard {
+  height: 3rem;
 }
 
 /*** ACTIONS ***/
@@ -130,13 +159,6 @@ button {
     grid-template-rows: 1fr 1fr;
     margin: 10px 40px;
     gap: 10px;
-}
-
-.actions p,
-.actions h1,
-.actions h2 {
-  margin: 0;
-  padding: 0;
 }
 
 .action-buttons {
