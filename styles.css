@@ -86,7 +86,7 @@ textarea:not([rows]) {
 *,
 *::before,
 *::after {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -125,14 +125,16 @@ button {
 
 /*** NAV BAR ***/
 .nav {
-    background-color: blue;
+    background-color: var(--sky-blue);
     grid-row: 1 / 6;
     color: white;
+    fill: white;
     display: grid;
     grid-template-rows: repeat(3, auto);
     align-content: start;
     padding: 1rem;
     gap: 3rem;
+    font-weight: 500;
 }
 
 .dashboard-title {
@@ -146,8 +148,21 @@ button {
   font-size: 1.5rem;
 }
 
-.view-dashboard {
+.dashboard-icon {
   height: 3rem;
+  width: 3rem;
+}
+
+.user-links .icon,
+.admin-links .icon {
+  height: 1.5rem;
+}
+
+.user-links,
+.admin-links {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
 }
 
 /*** ACTIONS ***/
