@@ -106,7 +106,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
 }
 
@@ -121,12 +121,13 @@ button {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: 10px 40px;
+    gap: 10px;
 }
 
 .action-buttons {
-    margin: .5rem 1.5rem .5rem 0rem;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
     gap: 1.5rem;
     justify-content: end;
     align-items: center;
@@ -137,8 +138,6 @@ button {
     width: 6rem;
     padding: .4rem 0rem;
     background-color: var(--sky-blue);
-    justify-self: center;
-    align-self: center;
 }
 
 /* Temporary to visualize sections */
