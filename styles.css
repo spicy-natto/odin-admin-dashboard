@@ -86,7 +86,7 @@ textarea:not([rows]) {
 *,
 *::before,
 *::after {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -258,5 +258,13 @@ button {
 
 /*** DASHBOARD ***/
 .dashboard {
-  background-color: lightslategray;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
