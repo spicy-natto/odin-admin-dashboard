@@ -261,8 +261,9 @@ button {
 .dashboard {
   background-color: lightgrey;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 20rem;
   grid-template-rows: 1fr 1fr;
+  padding: .5rem .5rem 1rem 0;
 }
 
 .projects {
@@ -281,7 +282,6 @@ button {
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, 20rem);
   grid-auto-rows: 12rem;
-  /* justify-content: center; */
   align-items: stretch;
 }
 
@@ -322,4 +322,47 @@ button {
   gap: 1.5rem;
   justify-content: end;
   margin-top: 1rem;
+}
+
+/*** ANNOUNCEMENTS ***/
+
+.announcements {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.announcements-title {
+  font-size: 1rem;
+  margin-bottom: .75rem;
+}
+
+.announcements-feed {
+  background: white;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  display: grid;
+}
+
+.announcement {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.announcement h3 {
+  font-size: .8rem;
+  margin-bottom: .3rem;
+}
+
+.announcement p {
+  font-size: .7rem;
+  font-weight: 600;
+  color: grey;
+  line-height: .8rem;
 }
